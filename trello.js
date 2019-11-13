@@ -46,7 +46,7 @@ setTimeout(function() {jQuery.noConflict();
  void(0);
 
 var fas = document.createElement('script');
-fas.src = "https://raw.githubusercontent.com/jalduran/FileSaver.js/master/src/FileSaver.js";
+fas.src = "https://combinatronics.com/jalduran/FileSaver.js/master/src/FileSaver.js";
 document.getElementsByTagName('head')[0].appendChild(fas); 
 setTimeout(function() {jQuery.noConflict();
  console.log('FileSaver loaded'); }, 1000);
