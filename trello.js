@@ -24,10 +24,11 @@ function getinfo(){
 	tr.appendChild(listcont); 
 	var listado = $(this)[0].childNodes[1].getElementsByTagName('a');
 	Array.from(listado).forEach(function (element) { 
-		var titulo = element.getElementsByClassName("js-card-name");
+		var board = element.getElementsByClassName("list-card-details");
 		var task = document.createElement("td"); 
-		var t = document.createTextNode(titulo[0].childNodes[1].textContent);
-		task.appendChild(t)
+		var sp = document.createElement("span"); 
+		sp.innerHTML = board[0].outerHTML;
+		task.appendChild(sp)
 		tr.appendChild(task); 
      }); 
 	tbody.appendChild(tr);	
